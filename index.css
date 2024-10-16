@@ -1,5 +1,6 @@
 body,html{
-    background-color: cadetblue;
+    background-color:rgb(116, 0, 188);
+
 }
 .nadpis{
     position: absolute;
@@ -58,3 +59,11 @@ body,html{
     top: 70%
 }
 
+.video{
+    position: absolute;
+    left: 45%;
+    top: 70%
+}
+
+div{
+    color: rgb(255, 0, 0);}
