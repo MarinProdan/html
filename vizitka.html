@@ -1,0 +1,152 @@
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Vizitka</title>
+
+        <style>
+            .main{
+                position: absolute;
+                background-color: black;
+                width: 100vw;
+                height: 100vh;
+                top: 0%;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+            
+
+
+            .karta{
+                box-shadow: 0 0 10px 2px rgb(140, 203, 5);
+                position: absolute;
+                width: 70vh;
+                height: 40vh;
+                padding: 10px;
+                background-color: rgb(48, 46, 46);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                
+                    
+            }
+            .karta.banana {
+                opacity: 5;
+                transition: opacity 0.5s;
+            }
+            
+
+
+            .text{
+                font-size: 5vh;
+                color: rgb(183, 11, 11); 
+                position: absolute;
+                top: 55%;
+            }
+
+            .imagine{
+                position: absolute;
+                left: 5%;
+                top: 5%;
+                height: 25vh;
+                width: 25vh;
+                border-radius: 50%;
+            }
+            
+            .text2{
+                text-align: center;
+                position: absolute;
+                top: 10%;
+                left: 60%;
+                font-size: 2vh;
+                color: aqua;
+            }
+
+            .text3{
+                text-align: center;
+                position: absolute;
+                font-size: 2vh;
+                left: 60%;
+                top : 20%;
+                color: aqua;
+            }
+
+            .tel{
+                text-align: center;
+                position: absolute;
+                font-size: 2vh;
+                left: 60%;
+                top : 30%;
+                color: aqua;
+            }
+
+            .skola{
+                text-align: center;
+                position: absolute;
+                font-size: 2vh;
+                left: 60%;
+                top : 40%;
+                color: aqua;
+            }
+            .karta:hover{
+                background-color: rgb(48, 6, 46);
+                padding: 10px;
+                cursor: pointer;
+                transition-duration: 0.3s;
+            
+                
+
+            }
+            .karta:hover .text,
+            .karta:hover .text2,
+            .karta:hover .text3,
+            .karta:hover .tel,
+            .karta:hover .imagine,
+            .karta:hover .skola {
+                opacity: 0;
+                transition: opacity 0.3s ease;
+
+            }
+            .karta:hover .banana {
+                display: block;
+            }
+            
+
+            .banana{
+                display: none;
+                position: absolute;
+                left: 35%;
+                top: 10%;
+                height: 25vh;
+                width: 25vh;
+            }
+            
+            
+        </style>
+        </head>
+
+
+        <body>
+            <div class="main">
+            
+                <div class="karta">
+                    <div style="border-left: 3px solid black; height: 30vh;left: 50%; position: absolute;"></div>
+
+                    <div class="text">
+                        <p class="text1">Marin Prodan</p>
+                    </div>
+                    <img class="imagine" src="IMG_4652.JPG">
+                    <div class="text2">
+                      <p class="text2"></p>marinprodan2006@gmail.com</p>
+                    </div>
+                   <p class="text3">MarinProdan.github.io</p>
+                  <p class="tel">+420 608 123 333</p>
+                  <p class="skola">VO,SP  a SO  Varnsdorf</p>
+                  <img class="banana" src="banana-svgrepo-com.svg" alt="Description of SVG">
+
+                
+                </div>
+            </div>    
+        </body>
+
