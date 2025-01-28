@@ -1,0 +1,158 @@
+body{
+    background-color: black;
+}
+
+.pohyb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: black;
+}
+.sun{
+    display: flex;
+    background-color: rgb(255, 238, 7);
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 10vh;
+    width: 10vh;
+    animation: rotatesun 5s linear infinite;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 5px rgb(255, 238, 7);
+    
+}
+@keyframes rotatesun {
+    from{
+        transform:rotate(0deg) ;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.merkur-ring{
+
+    display: flex   ;
+    
+    width: 20vh;
+    height: 5vh;
+    animation: rotatemerkur-ring 10s linear infinite;
+    margin: auto;
+}
+@keyframes rotatemerkur-ring {
+    from{
+        transform:rotate(0deg) ;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.merkur{
+    
+    border-radius: 50%;
+    height: 3vh;
+    width: 3vh;
+    background-color: rgb(109, 58, 0);
+    box-shadow: inset 0 0 8px rgb(244, 244, 244);
+    animation: merkurshine 10s linear infinite;
+}
+
+
+
+.venus-ring{
+    display: flex ;
+    width: 30vh;
+    height: 15vh;
+    animation: rotatevenus-ring 14s linear infinite;
+    margin: auto;
+    position: absolute;
+}
+@keyframes rotatevenus-ring {
+    from{
+        transform:rotate(0deg) ;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.venus{
+    border-radius: 50%;
+    height: 5vh;
+    width: 5vh;
+    background-color: rgb(155, 114, 0);
+    animation: venusshine 14s linear infinite;
+}
+
+
+
+.zeme-ring{
+    display: flex ;
+    width: 40vh;
+    height: 40vh;
+    animation: rotatezeme-ring 18s linear infinite;
+    margin: auto;
+    position: absolute;
+    
+}
+@keyframes rotatezeme-ring {
+    from{
+        transform:rotate(0deg) ;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.zeme{
+    border-radius: 50%;
+    height: 6vh;
+    width: 6vh;
+    background-color: aqua;
+    animation: zemeshine 18s linear infinite;
+}
+
+
+
+.luna{
+    border-radius: 50%;
+    height: 3vh;
+    width: 3vh;
+    background-color: rgb(155, 146, 146);
+    box-shadow:  0 0 6px 5px rgb(131, 128, 128);
+}
+
+.saturn-ring{
+    
+    display: flex ;
+    width: 70vh;
+    height: 70vh;
+    position: absolute;
+    margin: auto;
+    animation: rotatesaturn-ring 22s linear infinite;
+}
+@keyframes rotatesaturn-ring {
+    from{
+        transform:rotate(0deg) ;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.saturn {
+    position: relative;
+    border-radius: 50%;
+    
+    height: 8vh;
+    width: 8vh;
+    
+    background-color: rgb(202, 124, 6);
+    border: 0 0 10px  rgb(194, 188, 178);
+}
+ 
+
