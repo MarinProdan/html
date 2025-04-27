@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukázka filtrování dat</title>
+    <link rel="stylesheet" href="mesta.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ukázka filtrování dat</h1>
+        <nav class="menu">
+            <a href="#tabulka">Tabulka</a>
+            <a href="#formular">Formulář</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tabulka">
+            <h2>Tabulka měst</h2>
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Město<br><input type="text" id="filterTableInput" placeholder="Filtrovat města..."></th>
+                        <th>Počet obyvatel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Praha</td><td>1300000</td></tr>
+                    <tr><td>2</td><td>Varnsdorf</td><td>15000</td></tr>
+                    <tr><td>3</td><td>Ústí nad Labem</td><td>93000</td></tr>
+                    <tr><td>4</td><td>Pardubice</td><td>90000</td></tr>
+                    <tr><td>5</td><td>Semily</td><td>9000</td></tr>
+                    <tr><td>6</td><td>Olomouc</td><td>100000</td></tr>
+                </tbody>                
+            </table>
+        </section>
+
+        <section id="formular">
+            <h2>Formulář výběru města</h2>
+            <form id="cityForm">
+                <input type="text" id="filterSelectInput" placeholder="Filtrovat možnosti...">
+                <select id="citySelect">
+                    <option value="Praha">Praha</option>
+                    <option value="Varnsdorf">Varnsdorf</option>
+                    <option value="Ústí nad Labem">Ústí nad Labem</option>
+                    <option value="Pardubice">Pardubice</option>
+                    <option value="Semily">Semily</option>
+                    <option value="Olomouc">Olomouc</option>
+                </select>                
+                <button type="submit">Odeslat</button>
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+
+    <script src="mesta.js"></script>
+</body>
+</html>
+
+
